@@ -7,10 +7,10 @@ const cacheAssets = [
     'main.js',
     'pagina1.html',
     'pagina2.html',
-    'imagen1.jpg',
-    'imagen2.jpg',
-    'imagen3.jpg',
-    'imagen4.jpg'
+    'img/imagen1.jpg',
+    'img/imagen2.jpg',
+    'img/imagen3.jpg',
+    'img/imagen4.jpg'
 
     //Agregar mas recurso que se necesiten imagenes, css, etc.
 ];

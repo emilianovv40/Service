@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service Worker</title>
+    <!-- Bootstrap CSS y JavaScript -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            background-color: #33669c; /* Azul */
+            color: #ffffff;
+        }
+
+        .footer {
+            background-color: #343a40;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Establecer tamaño específico para las imágenes del carrusel */
+        .carousel-inner img {
+            width: 100%;
+            height: 300px; /* Ajusta la altura según tus necesidades */
+            object-fit: cover; /* Escala la imagen para cubrir completamente el contenedor */
+        }
+
+        .container {
+            color: #000000; /* Texto en color negro dentro del contenedor */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Service Worker</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina1.html">Pagina 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pagina2.html">Pagina 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Pagina 1</h1>
+            <p class="lead">Este es un ejemplo de cómo entender cómo funcionan los service workers</p>
+
+            <!-- Carrusel de imágenes -->
+            <div id="carouselExample" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="img/imagen1.jpg" class="d-block w-100" alt="Descripción de la imagen 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="img/imagen2.jpg" class="d-block w-100" alt="Descripción de la imagen 2">
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+
+            <!-- Archivo main.js -->
+            <script src="main.js"></script>
+        </div>
+    </div>
+
+    <div class="footer">
+        Jose Emiliano Valdovinos Vergara 19307027
+    </div>
+</body>
+
+</html>
